@@ -15,7 +15,7 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * 支持 ARM 构架的QNAP存储设备
 * 支持 aach64 构架的QNAP存储设备
 
-
+## WebDAV 存储支持
 | 存储类型| 	列出文件/文件夹	| 下载文件| 	创建目录| 	重命名| 	移动| 	复制| 	上传文件/文件夹| 
 | :--------:   | :--------:  | :--------:  |:--------:  |:--------:  |:--------:  |:--------: |:--------: |
 | 本地存储|	✅|	✅|	✅|	✅|	✅|	✅|	✅|
@@ -36,6 +36,10 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 | YandexDisk|	✅|	✅|	✅|	✅|	✅|	✅|	✅|
 | 百度网盘|	✅|	✅|	✅|	✅|	✅|	✅|	✅|
 | 夸克网盘|	✅|	✅|	✅|	✅|	✅|	✅|	✅|
+
+## 注意
+* 由于阿里云盘 referer 的限制，必须使用移动端 token。 使用桌面 Web 令牌将导致无法下载和预览。
+* 点击这里获取移动版阿里云盘token ：https://alist.nn.ci/zh/guide/drivers/aliyundrive.html
 
 ## 如何获取Token
 
