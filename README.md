@@ -2,9 +2,9 @@
 A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 ## 介绍
-通过 Rust 语言实现了阿里云盘的webdav协议，只需要简单的配置一下，就可以让阿里云盘变身为webdav协议的文件服务器。
+一款设计为易于安装，并且可以在所有平台上使用的网盘挂载工具，支持多个存储提供商，包括本地存储、阿里云盘、OneDrive、Google Drive 等，且易于拓展。
 
-* Rust 版开源：https://github.com/alist-org/alist
+* Alist 版开源：https://github.com/messense/aliyundrive-webdav
 
 
 ## 如何使用
