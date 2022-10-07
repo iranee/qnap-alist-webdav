@@ -41,11 +41,9 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * 由于阿里云盘 referer 的限制，必须使用移动端 token。 使用桌面 Web 令牌将导致无法下载和预览。
 * 点击这里获取移动版阿里云盘token ：https://alist.nn.ci/zh/guide/drivers/aliyundrive.html
 
-## 如何获取Token
-
-
 ## 配置示意图 
-
+* 默认用户名：admin
+* 默认密码：123456
  
 
 ## 本软件为免费开源项目，无任何形式的盈利行为。
