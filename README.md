@@ -3,7 +3,7 @@
 A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 ## 介绍
-一款支持多种存储、挂载本地存储、阿里云盘、百度网盘、OneDrive、Google Drive 等,支持网页浏览和 WebDAV 的文件列表程序。
+一款支持多种网络存储、挂载本地存储、阿里云盘、百度网盘、OneDrive、Google Drive 等,支持网页浏览和 WebDAV 的文件列表程序。
 
 * Alist 版开源：https://github.com/alist-org/alist
 
