@@ -42,9 +42,14 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * 点击这里获取移动版阿里云盘token ：https://alist.nn.ci/zh/guide/drivers/aliyundrive.html
 
 ## 配置示意图 
-* 默认用户名：admin
-* 默认密码：123456
- 
+ | 类型| 	配置	|
+| :--------:   | :--------:  |
+| 默认用户名|admin|
+| 默认密码|123456|
+|Url|http[s]://localhost:5244|
+| webdav用户名|同上|
+| webdav密码|同上|
+| webdav Url|http[s]://localhost:5244/dav/|
 
 ## 本软件为免费开源项目，无任何形式的盈利行为。
  1. 本软件为免费开源项目，无任何形式的盈利行为。
