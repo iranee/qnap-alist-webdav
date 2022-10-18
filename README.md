@@ -7,6 +7,11 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 * Alist 版开源：https://github.com/alist-org/alist
 
+## update:
+* 跟随官方最新编译版本为：v3.2.0
+* 此版本之后支持保留数据库升级插件
+* 建议卸载v3.0.0版本后安装最新版，否则主页会一直显示本地版本v3.0.0，不影响使用。
+
 
 ## 如何使用
 在QNAP系统，通过App Center手动安装 ***.qpkg*** 后辍程序。
