@@ -130,11 +130,20 @@
 # Define any package specific operations that shall be performed when
 # the package is installed.
 ######################################################################
-#pkg_pre_install(){
-#}
-#
-#pkg_install(){
-#}
-#
-#pkg_post_install(){
-#}
+pkg_pre_install(){
+CONF=/etc/config/qpkg.conf
+QPKG_NAME="alist"
+QPKG_ROOT=`/sbin/getcfg $QPKG_NAME Install_Path -f ${CONF}`
+
+if [ -f "$QPKG_ROOT/data/data.db" ]; then
+mv $QPKG_ROOT/data/data.db $QPKG_ROOT/data/_data.db
+/bin/chmod -Rf 777 $QPKG_ROOT/*
+fi
+}
+
+pkg_post_install(){
+if [ -f "$QPKG_ROOT/data/_data.db" ]; then
+mv $QPKG_ROOT/data/_data.db $QPKG_ROOT/data/data.db
+/bin/chmod -Rf 777 $QPKG_ROOT/*
+fi
+}
