@@ -17,10 +17,10 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 | 文件名        | 对应内核   |
 | :--------:   | :-----:  |
 | x86_64.qpkg	| linux-amd64 & x86_64 |
-|arm_64.qpkg	|linux-arm64|
 |arm-x19.qpkg	|linux-arm-7|
-|arm-x41.qpkg	|linux-musl-amd64|
+|arm_64.qpkg	|linux-arm64|
 |arm-x31.qpkg	|linux-musl-arm|
+|arm-x41.qpkg	|linux-musl-amd64|
 
 
 ## 如何使用
