@@ -12,15 +12,6 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * v3.2.0版本之后支持保留数据库升级插件
 * 建议卸载v3.0.0版本后安装最新版，否则主页会一直显示本地版本v3.0.0，不影响使用。
 * 查看系统内核版本，安装对应插件
-* 注意此处的arm-x19，arm-31，arm-x41并非对应QNAP的内核型号
-
-| 文件名        | 对应内核   |
-| :--------:   | :-----:  |
-| x86_64.qpkg	| linux-amd64 & x86_64 |
-|arm-x19.qpkg	|linux-arm-7|
-|arm_64.qpkg	|linux-arm64|
-|arm-x31.qpkg	|linux-musl-arm|
-|arm-x41.qpkg	|linux-musl-amd64|
 
 
 ## 如何使用
