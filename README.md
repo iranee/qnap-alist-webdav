@@ -8,7 +8,7 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * Alist 版开源：https://github.com/alist-org/alist
 
 ## update:
-* 跟随官方最新编译版本为：v3.2.1
+* 跟随官方最新编译版本
 * v3.2.0版本之后支持保留数据库升级插件
 * 建议卸载v3.0.0版本后安装最新版，否则主页会一直显示本地版本v3.0.0，不影响使用。
 * 查看系统内核版本，安装对应插件
