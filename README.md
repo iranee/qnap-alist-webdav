@@ -52,10 +52,14 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 | :--------:   | :--------:  |
 | 默认用户名|admin|
 | 默认密码|123456|
-|Url|http[s]://localhost:5244|
+|访问Url|http://Nas-ip:5244|
 | webdav用户名|同上|
 | webdav密码|同上|
-| webdav Url|http[s]://localhost:5244/dav/|
+| webdav根目录 Url|http://localhost:5244/dav/|
+
+* 注意：威联通HBS3挂载的名称必须为英文，不能挂载/dav/根目录，要带网盘的挂载路径
+* 例如阿里云盘的alist挂载目录名称是aliyundrive
+* 挂载URL：http://127.0.0.1:5244/dav/aliyundrive
 
 ## 开源声明
  1. 本软件为免费开源项目，无任何形式的盈利行为。
