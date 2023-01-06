@@ -12,8 +12,18 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * v3.2.0版本之后支持保留数据库升级插件
 * 建议卸载v3.0.0版本后安装最新版，否则主页会一直显示本地版本v3.0.0，不影响使用。
 * 查看系统内核版本，安装对应插件
+## v3.7.X新加功能：
+* 3.7.x 版本已经支持  ".epub" 阅读
+* 但是需要自己手动添加(因为已经创建过数据库了,覆盖会导致配置丢失)
+* 如果是第一次安装启动（3.7.x版本及以上的）不用手动添加
+* 添加方式：后台 ——>设置——>预览——>Iframe 预览，写在PDF后来，
+* 有个逗号 "," 英文的逗号
 
 
+`,
+  "epub": {
+    "EPUB.js":"/static/epub.js/viewer.html?url=$e_url"
+  }`
 ## 如何使用
 在QNAP系统，通过App Center手动安装 ***.qpkg*** 后辍程序。
 
