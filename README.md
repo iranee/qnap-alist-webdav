@@ -16,14 +16,13 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * 3.7.x 版本已经支持  ".epub" 阅读
 * 但是需要自己手动添加(因为已经创建过数据库了,覆盖会导致配置丢失)
 * 如果是第一次安装启动（3.7.x版本及以上的）不用手动添加
-* 添加方式：后台 ——>设置——>预览——>Iframe 预览，写在PDF后来，
+* 添加方式：后台 ——>设置——>预览——>Iframe 预览，写在PDF后面
 * 有个逗号 "," 英文的逗号
-
-
 `,
   "epub": {
     "EPUB.js":"/static/epub.js/viewer.html?url=$e_url"
   }`
+ ![预览](https://raw.githubusercontent.com/iranee/qnap-alist-webdav/main/EPUB.js_read.png) 
 ## 如何使用
 在QNAP系统，通过App Center手动安装 ***.qpkg*** 后辍程序。
 
