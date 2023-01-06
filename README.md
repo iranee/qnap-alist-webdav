@@ -16,8 +16,7 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * 3.7.x 版本已经支持  ".epub" 阅读
 * 但是需要自己手动添加(因为已经创建过数据库了,覆盖会导致配置丢失)
 * 如果是第一次安装启动（3.7.x版本及以上的）不用手动添加
-* 添加方式：后台 ——>设置——>预览——>Iframe 预览，写在PDF后面
-* 有个逗号 "," 英文的逗号
+* 添加方式：复制下面代码，进去后台 ——>设置——>预览——>Iframe 预览，粘贴到最后符号}的后面
 `,
   "epub": {
     "EPUB.js":"/static/epub.js/viewer.html?url=$e_url"
