@@ -45,3 +45,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: export
         run: export PATH="/usr/share/QDK/bin:${PATH}"
+        
+      # Runs a set of commands using the runners shell
+      - name: ls
+        run: ls -lrt
