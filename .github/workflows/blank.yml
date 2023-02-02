@@ -53,7 +53,7 @@ jobs:
         
       # Runs a set of commands using the runners shell
       - name: extract
-        run: qbuild --extract alist_3.9.2_arm-x41.qpkg
+        run: /usr/share/QDK/bin/qbuild --extract alist_3.9.2_arm-x41.qpkg
                 
       # Runs a set of commands using the runners shell
       - name: ls
