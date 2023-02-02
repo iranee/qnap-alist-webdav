@@ -32,7 +32,8 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
           git-core \
           ca-certificates
-      
+          wget
+        
       # Runs a set of commands using the runners shell
       - name: clone
         run: git clone https://github.com/qnap-dev/QDK.git
@@ -45,7 +46,15 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: export
         run: export PATH="/usr/share/QDK/bin:${PATH}"
+
+      # Runs a set of commands using the runners shell
+      - name: wget
+        run: wget https://github.com/iranee/qnap-alist-webdav/releases/download/v3.9.2/alist_3.9.2_arm-x41.qpkg
         
+      # Runs a set of commands using the runners shell
+      - name: extract
+        run: qbuild --extract alist_3.9.2_arm-x41.qpkg
+                
       # Runs a set of commands using the runners shell
       - name: ls
         run: ls -lrt
