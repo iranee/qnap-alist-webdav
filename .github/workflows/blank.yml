@@ -54,11 +54,10 @@ jobs:
       - name: ls
         run: ls -lrt
 
-      - uses: actions/download-artifact@v3
-        id: download
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
-          name: 'my-artifact'
-          path: ./
-
-      - name: 'Echo download path'
-        run: echo ${{steps.download.outputs.download-path}}
+          files: |
+            *.qpkg
+            *.md5
