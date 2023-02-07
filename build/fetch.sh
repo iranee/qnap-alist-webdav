@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source ../AList/qpkg.cfg
+source ./AList/qpkg.cfg
 
 mkdir -p out/tar
 mkdir -p out/extracted
