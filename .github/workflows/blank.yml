@@ -33,46 +33,20 @@ jobs:
           git-core \
           ca-certificates \
           wget
-        
+
       # Runs a set of commands using the runners shell
       - name: clone
         run: git clone https://github.com/qnap-dev/QDK.git
-        
-              
+
+
       # Runs a set of commands using the runners shell
       - name: qdk
         run: cd QDK && sudo ./InstallToUbuntu.sh install
-        
-      # Runs a set of commands using the runners shell
-      - name: export
-        run: export PATH="/usr/share/QDK/bin:${PATH}"
-    
-      - name: mkdir
-        run: mkdir alist-qkpg && cd alist-qkpg
 
       # Runs a set of commands using the runners shell
-      - name: wget
-        run: wget https://github.com/iranee/qnap-alist-webdav/releases/download/v3.9.2/alist_3.9.2_arm-x41.qpkg
-        
-      # Runs a set of commands using the runners shell
-      - name: extract
-        run: /usr/share/QDK/bin/qbuild --extract alist_3.9.2_arm-x41.qpkg | tar -ztvf data.tar.gz
-                
-      # Runs a set of commands using the runners shell
-      - name: ls
-        run: ls -lrt
-      
-      - name: mkdir
-        run: cd ../ && mkdir tr-qkpg && cd tr-qkpg
+      - name: build
+        run: /usr/share/QDK/bin/qbuild --root /AList --build-arch x86_64 --build-dir ./
 
-      # Runs a set of commands using the runners shell
-      - name: wget
-        run: wget https://www.myqnap.org/repo/MTransmission3_3.0.0.2205_arm_64.qpkg
-        
-      # Runs a set of commands using the runners shell
-      - name: extract
-        run: /usr/share/QDK/bin/qbuild --extract MTransmission3_3.0.0.2205_arm_64.qpkg | tar -ztvf data.tar.gz
-                
       # Runs a set of commands using the runners shell
       - name: ls
         run: ls -lrt
