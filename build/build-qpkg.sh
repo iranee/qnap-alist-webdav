@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 mkdir -p ./AList/arm-x19
-cp ./out/alist-arm .AList/arm-x19/alist
+cp ./out/alist-arm ./AList/arm-x19/alist
 
 mkdir -p ./AList/arm-x31
-cp ./out/alist-arm .AList/arm-x31/alist
+cp ./out/alist-arm ./AList/arm-x31/alist
 
 mkdir -p ./AList/arm-x41
 cp ./out/alist-arm ./AList/arm-x41/alist
