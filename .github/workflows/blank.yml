@@ -48,7 +48,7 @@ jobs:
         run: export PATH="/usr/share/QDK/bin:${PATH}"
     
       - name: mkdir
-        run: mkdir alist-qkpg & cd alist-qkpg
+        run: mkdir alist-qkpg && cd alist-qkpg
 
       # Runs a set of commands using the runners shell
       - name: wget
@@ -63,7 +63,7 @@ jobs:
         run: ls -lrt
       
       - name: mkdir
-        run: cd ../ & mkdir tr-qkpg & cd tr-qkpg
+        run: cd ../ && mkdir tr-qkpg && cd tr-qkpg
 
       # Runs a set of commands using the runners shell
       - name: wget
