@@ -45,7 +45,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: build
-        run: /usr/share/QDK/bin/qbuild --root /AList --build-arch x86_64 --build-dir ./
+        run: /usr/share/QDK/bin/qbuild --root ./AList --build-arch x86_64 --build-dir ./
 
       # Runs a set of commands using the runners shell
       - name: ls
