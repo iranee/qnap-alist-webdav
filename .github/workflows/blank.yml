@@ -56,7 +56,7 @@ jobs:
         
       # Runs a set of commands using the runners shell
       - name: extract
-        run: /usr/share/QDK/bin/qbuild --extract alist_3.9.2_arm-x41.qpkg | grep -v ./$ | xargs -I {} cat {}
+        run: /usr/share/QDK/bin/qbuild --extract alist_3.9.2_arm-x41.qpkg | tar -ztvf data.tar.gz
                 
       # Runs a set of commands using the runners shell
       - name: ls
@@ -71,7 +71,7 @@ jobs:
         
       # Runs a set of commands using the runners shell
       - name: extract
-        run: /usr/share/QDK/bin/qbuild --extract alist_3.9.2_arm-x41.qpkg | grep -v ./$ | xargs -I {} cat {}
+        run: /usr/share/QDK/bin/qbuild --extract MTransmission3_3.0.0.2205_arm_64.qpkg | tar -ztvf data.tar.gz
                 
       # Runs a set of commands using the runners shell
       - name: ls
