@@ -44,10 +44,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: fetch
-        run:
-          sh build/fetch.sh
+        run: sh build/fetch.sh
 
-          # Runs a set of commands using the runners shell
+      # Runs a set of commands using the runners shell
       - name: build
         run: sh build/build-qpkg.sh
 
