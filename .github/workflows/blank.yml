@@ -32,7 +32,8 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
           git-core \
           ca-certificates \
-          wget
+          wget \
+          source
 
       # Runs a set of commands using the runners shell
       - name: clone
