@@ -56,12 +56,12 @@ jobs:
       - name: ls
         run: ls -lrt
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: my-artifact
-          path: |
-            *.qpkg
-            *.md5
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: my-artifact
+      #     path: |
+      #       *.qpkg
+      #       *.md5
 
       - name: Release
         uses: softprops/action-gh-release@v1
