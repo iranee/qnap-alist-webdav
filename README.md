@@ -7,29 +7,17 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 * Alist 版开源：https://github.com/alist-org/alist
 
-## update:
-* 跟随官方最新编译版本
-* v3.2.0版本之后支持保留数据库升级插件
-* 建议卸载v3.0.0版本后安装最新版，否则主页会一直显示本地版本v3.0.0，不影响使用。
-* 查看系统内核版本，安装对应插件
-## v3.7.X新加功能：
-* 3.7.x 版本已经支持  ".epub" 阅读
-* 但是需要自己手动添加(因为已经创建过数据库了,覆盖会导致配置丢失)
-* 如果是第一次安装启动（3.7.x版本及以上的）不用手动添加
-* 添加方式：复制下面代码，进去后台 ——>设置——>预览——>Iframe 预览，粘贴到最后符号`}`的后面
+## v3.13.2 Update:
+* 强烈建议卸载v3.13.2之前版本，安装最新版，以便使用最新数据库形态
+* sqlite3文件提取路径为/share/CACHEDEV1_DATA/.qpkg/CacheMount/bin/sqlite3
 
 
-`,
-  "epub": {
-    "EPUB.js":"/static/epub.js/viewer.html?url=$e_url"
-  }`
- ![预览](https://raw.githubusercontent.com/iranee/qnap-alist-webdav/main/EPUB.js_read.png) 
 ## 如何使用
 在QNAP系统，通过App Center手动安装 ***.qpkg*** 后辍程序。
 
-* 支持 x86_64 构架的QNAP存储设备
-* 支持 ARM 构架的QNAP存储设备
-* 支持 aach64 构架的QNAP存储设备
+* 支持 x86_64 构架的QNAP存储设备【x86_64】
+* 支持 ARM 构架的QNAP存储设备 【仅支持 arm-x41 及更高】
+* 支持 aach64 构架的QNAP存储设备 【arm_64】
 
 ## WebDAV 存储支持
 | 存储类型| 	列出文件/文件夹	| 下载文件| 	创建目录| 	重命名| 	移动| 	复制| 	上传文件/文件夹| 
