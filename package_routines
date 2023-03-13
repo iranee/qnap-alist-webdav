@@ -130,20 +130,40 @@
 # Define any package specific operations that shall be performed when
 # the package is installed.
 ######################################################################
-pkg_pre_install(){
+
+pkg_pre_install() {
 CONF=/etc/config/qpkg.conf
 QPKG_NAME="alist"
 QPKG_ROOT=`/sbin/getcfg $QPKG_NAME Install_Path -f ${CONF}`
 
-if [ -f "$QPKG_ROOT/data/data.db" ]; then
-mv $QPKG_ROOT/data/data.db $QPKG_ROOT/data/_data.db
-/bin/chmod -Rf 777 $QPKG_ROOT/*
-fi
+    if [ -f "$QPKG_ROOT/data/data.db" ]; then
+        mv $QPKG_ROOT/data/data.db $QPKG_ROOT/data/_data.db
+    fi
 }
 
-pkg_post_install(){
-if [ -f "$QPKG_ROOT/data/_data.db" ]; then
-mv $QPKG_ROOT/data/_data.db $QPKG_ROOT/data/data.db
-/bin/chmod -Rf 777 $QPKG_ROOT/*
-fi
+pkg_post_install() {
+CONF=/etc/config/qpkg.conf
+QPKG_NAME="alist"
+QPKG_ROOT=`/sbin/getcfg $QPKG_NAME Install_Path -f ${CONF}`
+sqlite3="$QPKG_ROOT/sqlite3"
+Ver=3.13.2
+
+	chmod -Rf 777 $QPKG_ROOT/alist
+    if [ -f "$QPKG_ROOT/data/_data.db" ]; then
+        mv $QPKG_ROOT/data/_data.db $QPKG_ROOT/data/data.db
+		$sqlite3 $QPKG_ROOT/data/data.db "UPDATE x_setting_items SET value='<div class="markdown-body"><h4>&#x6B22;&#x8FCE;&#x4F7F;&#x7528;<code>Alist</code>&#x7BA1;&#x7406;&#x4E91;&#x76D8;&#x7A7A;&#x95F4;</h4><table><tbody><tr><td>&#x5728;&#x7EBF;&#x7248;&#x672C;</td><td><a href="https://github.com/iranee/qnap-alist-webdav"><img src="https://img.shields.io/github/v/release/iranee/qnap-alist-webdav?color=3\&\label=Releases"></a></td></tr><tr><td>&#x672C;&#x5730;&#x7248;&#x672C;</td><td><img src="https://img.shields.io/badge/Version-v$Ver-yellowgreen"></td></tr></tbody></table><ul><li>&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF1A;<br></a><a href="https://alist.nn.ci/zh/guide/">https://alist.nn.ci/zh/guide</a></li><li><a href="/@login">&#x767B;&#x5F55;</a> &#x540E;&#x8FDB;&#x5165;&#x3010;<a href="/@manage/storages">&#x7BA1;&#x7406;/&#x5B58;&#x50A8;</a>&#x3011;<br>&#x9875;&#x9762;&#x6302;&#x8F7D;&#x7F51;&#x76D8;</li></ul></div>' WHERE key='announcement';"
+    else
+        $QPKG_ROOT/alist --force-bin-dir admin
+		sleep 2
+        if [ ! -f "$QPKG_ROOT/data/data.db" ]; then
+            /sbin/log_tool  -N "多云盘挂载" -G "Error" -t1 -uSystem -p127.0.0.1 -mlocalhost -a "[多云盘挂载] 无法生成数据库文件，请检查编译版本是否正确，系统构架：$(uname -r)-$(uname -m)。"
+        else
+			$sqlite3 $QPKG_ROOT/data/data.db "UPDATE x_users SET password='123456' WHERE username='admin'"
+			$sqlite3 $QPKG_ROOT/data/data.db "UPDATE x_setting_items SET value='多云盘挂载' WHERE key='site_title';"
+			$sqlite3 $QPKG_ROOT/data/data.db "UPDATE x_setting_items SET value='<div class="markdown-body"><h4>&#x6B22;&#x8FCE;&#x4F7F;&#x7528;<code>Alist</code>&#x7BA1;&#x7406;&#x4E91;&#x76D8;&#x7A7A;&#x95F4;</h4><table><tbody><tr><td>&#x5728;&#x7EBF;&#x7248;&#x672C;</td><td><a href="https://github.com/iranee/qnap-alist-webdav"><img src="https://img.shields.io/github/v/release/iranee/qnap-alist-webdav?color=3\&\label=Releases"></a></td></tr><tr><td>&#x672C;&#x5730;&#x7248;&#x672C;</td><td><img src="https://img.shields.io/badge/Version-v$Ver-yellowgreen"></td></tr></tbody></table><ul><li>&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF1A;<br></a><a href="https://alist.nn.ci/zh/guide/">https://alist.nn.ci/zh/guide</a></li><li><a href="/@login">&#x767B;&#x5F55;</a> &#x540E;&#x8FDB;&#x5165;&#x3010;<a href="/@manage/storages">&#x7BA1;&#x7406;/&#x5B58;&#x50A8;</a>&#x3011;<br>&#x9875;&#x9762;&#x6302;&#x8F7D;&#x7F51;&#x76D8;</li></ul></div>' WHERE key='announcement';"
+			sleep 1
+		fi
+    fi
+	mv $QPKG_ROOT/sqlite3 /dev/null
+	$QPKG_ROOT/alist --force-bin-dir admin
 }

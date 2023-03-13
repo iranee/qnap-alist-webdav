@@ -11,13 +11,9 @@ case "$1" in
         exit 1
     fi
      
-    if [ -f "$QPKG_ROOT/data/" ]; then
-    /sbin/log_tool -N "多云盘挂载" -G "Error" -t1 -uSystem -p127.0.0.1 -mlocalhost -a "[多云盘挂载] 启动文件alist丢失，请尝试重新安装插件。"
-    fi
-
 	/bin/chmod -Rf 777 $QPKG_ROOT/*
 	cd $QPKG_ROOT
-	./alist server 2>&1 & disown
+	./alist --force-bin-dir server 2>&1 & disown
 
     ;;
 
