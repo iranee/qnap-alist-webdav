@@ -9,7 +9,9 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 ## v3.13.2 Update:
 * 强烈建议卸载v3.13.2之前版本，安装最新版，以便使用最新数据库形态
+* 手动挂载网盘，尽量不要恢复之前备份内容。（可以将token记录后复制）
 * sqlite3文件提取路径为/share/CACHEDEV1_DATA/.qpkg/CacheMount/bin/sqlite3
+
 
 
 ## 如何使用
@@ -42,8 +44,8 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 | 夸克网盘|	✅|	✅|	✅|	✅|	✅|	✅|	✅|
 
 ## 注意
-* 由于阿里云盘 referer 的限制，必须使用移动端 token。 使用桌面 Web 令牌将导致无法下载和预览。
-* 点击这里获取移动版阿里云盘token ：https://alist.nn.ci/zh/guide/drivers/aliyundrive.html
+* 由于阿里云盘限制，改为挂载【阿里云盘 Open】
+* 点击这里获取阿里云盘token ：https://alist.nn.ci/zh/guide/drivers/aliyundrive_open.html
 
 ## 配置示意图 
  | 类型| 	配置	|
