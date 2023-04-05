@@ -61,6 +61,9 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * 例如阿里云盘的alist挂载目录名称是aliyundrive
 * 挂载URL：http://127.0.0.1:5244/dav/aliyundrive
 
+## Starchart
+[![Star History Chart](https://api.star-history.com/svg?repos=iranee/qnap-alist-webdav&type=Date)](https://star-history.com/#iranee/qnap-alist-webdav&Date)
+
 ## 开源声明
  1. 本软件为免费开源项目，无任何形式的盈利行为。
  2. 本软件服务于各种网盘，旨在让各大网盘功能更强大。如有侵权，请与我联系，会及时处理。
