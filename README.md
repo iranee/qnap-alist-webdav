@@ -44,8 +44,9 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 | 夸克网盘|	✅|	✅|	✅|	✅|	✅|	✅|	✅|
 
 ## 注意
-* 由于阿里云盘限制，改为挂载【阿里云盘 Open】
-* 点击这里获取阿里云盘token ：https://alist.nn.ci/zh/guide/drivers/aliyundrive_open.html
+* 如何挂载网盘：https://alist.nn.ci/zh/guide/
+* 如需挂载阿里云盘，改为挂载【阿里云盘 Open】
+* 点击这里获取【阿里云盘Open】token ：https://alist.nn.ci/zh/guide/drivers/aliyundrive_open.html
 
 ## 配置示意图 
  | 类型| 	配置	|
