@@ -64,7 +64,7 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 ## 交流群
 * 群名称： alist for QNAP QQ群号： 529743094
 * 可以交流各种QNAP技术、技巧、问题。
-[![qq-group]([https://api.star-history.com/svg?repos=iranee/qnap-alist-webdav&type=Date)](https://star-history.com/#iranee/qnap-alist-webdav&Date](https://raw.githubusercontent.com/iranee/qnap-alist-webdav/main/qq-group.jpg))
+[![qq-group](https://raw.githubusercontent.com/iranee/qnap-alist-webdav/main/qq-group.jpg)
 
 ## Starchart
 [![Star History Chart](https://api.star-history.com/svg?repos=iranee/qnap-alist-webdav&type=Date)](https://star-history.com/#iranee/qnap-alist-webdav&Date)
