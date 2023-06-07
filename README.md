@@ -5,8 +5,7 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 ## 介绍
 一款支持多种网络存储、挂载本地存储、阿里云盘、百度网盘、OneDrive、Google Drive 等,支持网页浏览和 WebDAV 的文件列表程序。
 
-* Alist 版开源：https://github.com/alist-org/alist
-
+* Alist 版开源：https://github.com/alist-org/alist <img src="https://img.shields.io/github/release/Xhofe/alist" alt="latest version" />
 ## v3.13.2 Update:
 * 强烈建议卸载v3.13.2之前版本，安装最新版，以便使用最新数据库形态
 * 手动挂载网盘，尽量不要恢复之前备份内容。（可以将token记录后复制）
