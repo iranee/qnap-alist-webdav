@@ -7,6 +7,10 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 * Alist 版开源：https://github.com/alist-org/alist   <a href="#">
     <img src="https://img.shields.io/github/release/Xhofe/alist" alt="latest version" />
+
+## v3.26.0 Update:
+* 升级全新最新数据库形态，保留用户配置
+ 
 ## v3.13.2 Update:
 * 强烈建议卸载v3.13.2之前版本，安装最新版，以便使用最新数据库形态
 * 手动挂载网盘，尽量不要恢复之前备份内容。（可以将token记录后复制）
@@ -18,7 +22,7 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 在QNAP系统，通过App Center手动安装 ***.qpkg*** 后辍程序。
 
 * 支持 x86_64 构架的QNAP存储设备【x86_64】
-* 支持 ARM 构架的QNAP存储设备 【仅支持 arm-x41 及更高】
+* 支持 ARM 构架的QNAP存储设备 【仅支持 arm-x41 及更高】 （旧版本插件）
 * 支持 aach64 构架的QNAP存储设备 【arm_64】
 
 ## WebDAV 存储支持
