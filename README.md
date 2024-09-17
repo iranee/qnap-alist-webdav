@@ -8,6 +8,12 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * Alist 版开源：https://github.com/alist-org/alist   <a href="#">
     <img src="https://img.shields.io/github/release/Xhofe/alist" alt="latest version" />
 
+ ## v3.37.3
+ * 修复115网盘登录故障
+ * 修复旧版阿里云Open的API导致不可登陆的故障  https://github.com/alist-org/alist/discussions/7189
+ * 修复早期旧版本用户密码迁移的bug
+ 
+
 ## v3.26.0 Update:
 * 升级全新最新数据库形态，保留用户配置
  
