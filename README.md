@@ -8,6 +8,11 @@ A file list program that supports multiple storage, powered by Gin and Solidjs.
 * Alist 版开源：https://github.com/alist-org/alist   <a href="#">
     <img src="https://img.shields.io/github/release/Xhofe/alist" alt="latest version" />
 
+## 安装注意
+ * 安装前先去【控制台】→【应用程序】→【Web服务器】→【☑️启用Web服务器】，不要更改默认80端口
+ * 忘记密码，进入shell，运行命令 `$(getcfg alist Install_Path -f /etc/config/qpkg.conf)/alist --force-bin-dir admin set 123456`
+ * 设置用户admin的新密码为123456
+
  ## v3.37.3
  * 修复115网盘登录故障
  * 修复旧版阿里云Open的API导致不可登陆的故障  https://github.com/alist-org/alist/discussions/7189
