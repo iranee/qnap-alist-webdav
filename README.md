@@ -1,7 +1,9 @@
 # 多云盘挂载集成工具 for QNAP
 ### Alist webdav for QNAP
 A file list program that supports multiple storage, powered by Gin and Solidjs.
-
+# 暂停更新
+ * 由于网络流传alist被卖已证实，暂时停止更新alist的插件，观望看看openlist怎么样
+ * https://github.com/OpenListTeam/OpenList
 ## 介绍
 一款支持多种网络存储、挂载本地存储、阿里云盘、百度网盘、OneDrive、Google Drive 等,支持网页浏览和 WebDAV 的文件列表程序。
 
