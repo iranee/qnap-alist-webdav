@@ -136,7 +136,7 @@ CONF=/etc/config/qpkg.conf
 QPKG_NAME="openlist"
 QPKG_ROOT=$(/sbin/getcfg $QPKG_NAME Install_Path -f ${CONF})
 sqlite3=$("/sbin/getcfg" "CacheMount" "Install_Path" -f "/etc/config/qpkg.conf")/bin/sqlite3
-Ver=4.2.4
+Ver=4.2.5
 
     if [ -f "$QPKG_ROOT/data/data.db" ]; then
 		killall openlist
@@ -151,7 +151,7 @@ CONF=/etc/config/qpkg.conf
 QPKG_NAME="openlist"
 QPKG_ROOT=$(/sbin/getcfg $QPKG_NAME Install_Path -f ${CONF})
 sqlite3=$(/sbin/getcfg CacheMount Install_Path -f /etc/config/qpkg.conf)/bin/sqlite3
-Ver=4.2.4
+Ver=4.2.5
     
 	chmod -Rf 777 $QPKG_ROOT/openlist
     
